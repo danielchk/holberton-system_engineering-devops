@@ -1,0 +1,1 @@
+In this proyect we practice with the shell and his basics

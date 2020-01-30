@@ -1,2 +1,2 @@
 #!/bin/bash
-chow -H betty:holberton _betty
+chow -H betty:holberton _hello

@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -anewer -type f | sort | wc -l
+find . -anewer -type f | sort -t

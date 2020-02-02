@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -anewer -type f | sort | tail -n 10
+find . -anewer -type f | sort | head -n 10

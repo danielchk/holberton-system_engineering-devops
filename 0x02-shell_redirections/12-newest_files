@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -anewer -type f | head -n 10
+find . -anewer -type f | tail -n 10

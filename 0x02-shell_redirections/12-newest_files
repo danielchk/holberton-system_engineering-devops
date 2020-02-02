@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -anewer -type f | sort -t
+ls -t | head

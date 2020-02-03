@@ -1,2 +1,2 @@
 #!/bin/bash
-find . "*.gif" | rev | cut -f 1 -d '\' | rev | LC_ALL=C
+find -name "*.gif" | rev | cut -f 1 -d '\' | rev | LC_ALL=C

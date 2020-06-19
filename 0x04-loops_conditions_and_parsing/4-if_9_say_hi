@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#print "holberton school" 9 times and "hi" in position 9
+i=0
+while [ $i -lt 10 ]; do
+	echo "Holberton School"
+	if (( i == 8 )); then
+		echo "Hi"
+	fi
+	(( i++ ))
+done

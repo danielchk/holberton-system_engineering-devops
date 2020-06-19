@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#read passwd and show filtrated info
+while read p; do
+	echo "$p" | cut -d':' -f1,3,6
+done < /etc/passwd

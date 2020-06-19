@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#show the name of archives after "-"
+for i in *; do
+	echo "$i" | cut -f2 -d'-'
+done

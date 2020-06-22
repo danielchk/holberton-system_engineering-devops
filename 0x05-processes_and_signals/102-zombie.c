@@ -17,7 +17,7 @@ int infinite_while(void)
 
 /**
  * main - 5 zombies
- * Return: always 0
+ * Return: 0
  */
 int main(void)
 {

@@ -8,4 +8,3 @@ service nginx start
 newpage="\\\trewrite ^/redirect_me https://www.9gag.com permanent;"
 sudo sed -i "26i $newpage" /etc/nginx/sites-available/default
 sudo service nginx restart
-sudo service nginx reload

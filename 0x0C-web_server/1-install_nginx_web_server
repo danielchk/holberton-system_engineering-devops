@@ -2,7 +2,7 @@
 # Install nginx and set the string holberton school in index.html
 
 sudo apt-get update
-sudo apt-get install -y nginx
-sudo touch /etc/nginx/html/index.html
-sudo echo "Holberton School" > /etc/nginx/html/index.html
+sudo apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sudo echo "Holberton School" > /var/www/html/index.html
 service nginx start

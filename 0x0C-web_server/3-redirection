@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 service nginx start
-newpage="\\\trewrite ^/redirect_me 9gag.com permanent;"
+newpage="\\\trewrite ^/redirect_me https://www.9gag.com permanent;"
 sudo sed -i "26i $newpage" /etc/nginx/sites-available/default
 sudo service nginx restart
 sudo service nginx reload

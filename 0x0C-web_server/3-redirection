@@ -1,19 +1,10 @@
 #!/usr/bin/env bash
-# Configures an Nginx server so that /redirect_me redirects to another page.
+# Install nginx and set the string holberton school in index.html
 
-sudo apt-get update
-sudo apt-get install -y nginx
-
-sudo touch /etc/nginx/html/index.html
-sudo echo "Holberton School" > /etc/nginx/html/index.html
-printf %s "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.htm;
-    location /redirect_me {
-        return 301 https://9gag.com/;
-    }
-}" > /etc/nginx/sites-available/default
-
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+service nginx start
+sudo sed -i "26i \\\trewrite ^/redirect_me 9gag.com permanent;" /etc/nginx/sites-available/default
 sudo service nginx restart
+sudo service nginx reload

@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # Install nginx and set the string holberton school in index.html
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
-service nginx start
-newpage="\\\trewrite ^/redirect_me https://www.9gag.com permanent;"
-sudo sed -i "26i $newpage" /etc/nginx/sites-available/default
+sudo service nginx start
+fix="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "26i $fix" /etc/nginx/sites-available/default
 sudo service nginx restart
+sudo service nginx reload

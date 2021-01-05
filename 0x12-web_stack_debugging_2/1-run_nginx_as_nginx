@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configures NGINX to run as user nginx instead of root
+# Nginx Start
 
 pkill nginx
 pkill apache2

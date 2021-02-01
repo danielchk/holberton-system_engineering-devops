@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """return information about the employee's todo list progress
 by his id"""
-
 import csv
 import requests
-from sys import argv
+import sys
 
 if __name__ == "__main__":
-    userid = argv[1]
+    userid = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(userid)).json()
     username = user.get("username")

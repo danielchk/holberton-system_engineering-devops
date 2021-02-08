@@ -18,3 +18,4 @@ The day 14/12/2020 at 04:23am PST the servers of website1 have issues give us ba
 
 ## Problem and solution
 
+The problem was in simple terms just an a typo. This error is typical in every programmer and with practice and a good eye(definitely) this problems can be solved. The first port that we found was the 8080 and this port was used to do some tests in before updates, so was changin again to 80 to conect to apache2.
